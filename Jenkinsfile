@@ -1,16 +1,16 @@
 
 stage "Build"
 node {
-	sh "scripts/build.sh" 
+	sh "pwd"
 }
 
 stage "Test"
 node {
-	sh "scripts/test.sh" 
+	sh "pwd"
 }
 
 stage "Deploy"
 node {
-	sh "scripts/deploy.sh" 
+	sh "pwd"
 }
 
