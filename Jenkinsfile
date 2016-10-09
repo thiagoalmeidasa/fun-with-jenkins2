@@ -1,20 +1,11 @@
 
 node {
 	git url: 'https://github.com/flugel-it/fun-with-jenkins2.git'
-}
-
-stage "Build"
-node {
+	stage "Build"
 	sh "scripts/deploy.sh"
-}
-
-stage "Test"
-node {
+	stage "Test"
 	sh "scripts/test.sh"
-}
-
-stage "Deploy"
-node {
+	stage "Deploy"
 	sh "scripts/deploy.sh"
 }
 
